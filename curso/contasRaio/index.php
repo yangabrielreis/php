@@ -6,7 +6,7 @@
   <title>Document</title>
 </head>
 <body>
-  <form action="contasRaio.php" method="post">
+  <form action="index.php" method="post">
     <label>raio</label>
     <input type="text" name="raio">
     <input type="submit" value="total"><br>

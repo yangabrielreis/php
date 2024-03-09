@@ -6,7 +6,7 @@
   <title>Capitals</title>
 </head>
 <body>
-  <form action="exampleAssociativeArrays.php" method="post">
+  <form action="index.php" method="post">
     <label>Enter a State</label>
     <input type="text" name="state">
     <input type="submit">

@@ -6,7 +6,7 @@
   <title>Menu</title>
 </head>
 <body>
-  <form action="menuDiner.php" method="post">
+  <form action="index.php" method="post">
     <label>Quantity</label><br>
     <input type="text" name="quantity"><br>
     <input type="submit" value="total"><br>
