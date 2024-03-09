@@ -17,8 +17,8 @@
 <?php
   $raio = $_POST["raio"];
   $result = null;
-  $circunpherence = $raio * pi() * 2;
-  echo "the circunpherence is " . round($circunpherence, 2) . "<br>";
+  $circumference = $raio * pi() * 2;
+  echo "the circumference is " . round($circumference, 2) . "<br>";
   $area = pow($raio, 2) * pi();
   echo "the area is " . round($area, 2) . "<br>";
 ?>
