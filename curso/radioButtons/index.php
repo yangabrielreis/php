@@ -7,11 +7,17 @@
 </head>
 <body>
   <form action="index.php" method="post">
-    <input type="radio" name="creditCard" value="Visa">
-    <input type="radio" name="creditCard" value="Mastercard">
-    <input type="radio" name="creditCard" value="OingoBoingo">
-    <input type="submit" name="send" value="send">
+    <input type="radio" name="creditCard" value="Visa"> VISA <br>
+    <input type="radio" name="creditCard" value="Mastercard"> MASTERCARD <br>
+    <input type="radio" name="creditCard" value="OingoBoingo"> OINGOBOINGO <br> <br>
+    <input type="submit" name="send" value="send"> <br>
 
   </form>
 </body>
 </html>
+
+<?php
+  $card = $_POST["creditCard"];
+  echo "<br>" . $card . "<br>";
+
+?>
