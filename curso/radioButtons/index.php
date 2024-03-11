@@ -10,14 +10,19 @@
     <input type="radio" name="creditCard" value="Visa"> VISA <br>
     <input type="radio" name="creditCard" value="Mastercard"> MASTERCARD <br>
     <input type="radio" name="creditCard" value="OingoBoingo"> OINGOBOINGO <br> <br>
-    <input type="submit" name="send" value="send"> <br>
+    <input type="submit" name="confirm" value="send"> <br>
 
   </form>
 </body>
 </html>
 
 <?php
-  $card = $_POST["creditCard"];
-  echo "<br>" . $card . "<br>";
-
-?>
+  if(isset($_POST["confirm"])){
+    if(empty($_POST["creditCard"])){
+      echo "<br> you must select a credit card";}
+    else{
+    $card = $_POST["creditCard"];
+    echo "<br>you have selected " . $card . "<br>";
+    unset($card);}
+  }
+  ?>
